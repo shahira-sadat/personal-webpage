@@ -1,0 +1,173 @@
+:root {
+  --bg-light: #f9fafb;
+  --bg-section: #ffffff;
+  --primary: #111827;
+  --primary-light: #1f2937;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --font: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #d1d5db;
+}
+
+.about figure {
+  margin: 0;
+  text-align: center;
+}
+
+.about img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.about figcaption {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+section {
+  background-color: var(--bg-section);
+  border-radius: 12px;
+  margin: 1rem 0;
+  padding: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #d1d5db;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f3f4f6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 0.5rem 0 0.2rem;
+  font-weight: 600;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.1);
+  outline: none;
+  background-color: white;
+}
+
+button:hover {
+  background-color: var(--primary-light);
+}
+
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--primary);
+  color: white;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 90%;
+  }
+
+  .about img {
+    width: 130px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}
